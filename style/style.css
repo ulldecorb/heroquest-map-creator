@@ -1,8 +1,13 @@
 body {
   background-color: #FF0000;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -17,15 +22,35 @@ body {
   -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-gap: 2px 2px;
-  background-color: #000;
-  margin: 30px;
+  background-clip: content-box;
   border: 2px solid #000;
   outline: 30px double #000;
 }
 
+.map__cell {
+  background-color: #FFF;
+  height: calc(88vh/26);
+  width: calc(88vh/26);
+}
+
 .cell-test {
   background-color: #FFF;
-  height: 30px;
-  width: 30px;
+  height: calc(88vh/26);
+  width: calc(88vh/26);
+}
+
+.icons {
+  height: 200px;
+  width: 200px;
+  margin-top: 30px;
+}
+
+.icons__skull {
+  height: calc(88vh/26);
+  width: calc(88vh/26);
+  background-image: url(../assets/objets/monstruos/Esqueleto.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
