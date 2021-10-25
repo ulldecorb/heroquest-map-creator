@@ -6,108 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <title>HeroQuest Creator</title>
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
 </head>
 <body>
-    <section class="map">
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
-        <div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div><div class="cell-test"></div>
+    <section id="map" class="map">
+        <!-- <div class="cell-test"  ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
     </section>
+    <div class="icons">
+        <div id="skull" class="icons__skull"  draggable="true" ondragstart="drag(event)"></div>
+    </div>
+    <!-- <div class="parchment"></div> -->
+    <script>
+        function fillMapCells () {
+            let map = document.getElementById("map");
+
+            for(let i = 0; i < 494; i++){
+                const cell = document.createElement( "DIV" );
+                cell.setAttribute( "class", 'map__cell');
+                cell.setAttribute( "ondrop", 'drop(event)' );
+                cell.setAttribute( "ondragover", 'allowDrop(event)' );
+                map.appendChild(cell);
+            }
+        }
+        fillMapCells();
+    </script>
 </body>
 </html>
