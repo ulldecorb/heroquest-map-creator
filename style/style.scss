@@ -33,19 +33,45 @@ body {
     width:calc(88vh/26);
 }
 
+.icon {
+    height:calc(88vh/26);
+    width:calc(88vh/26);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
 .icons{
+    position: fixed;
+    top:30px;
+    left:100px;
     height: 200px;
-    width: 200px;
+    width: 100px;
     margin-top: 30px;
 
-
     &__skull {
-        height:calc(88vh/26);
-        width:calc(88vh/26);
         background-image: url(../assets/objets/monstruos/Esqueleto.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat
+    }
+    &__ork {
+        background-image: url(../assets/objets/monstruos/Orco.png);
+    }
+    &__goblin {
+        background-image: url(../assets/objets/monstruos/Goblin.png);
+    }
+    &__chaos-warrior {
+        background-image: url(../assets/objets/monstruos/Guerrero-del-Caos.png);
+    }
+    &__zombie {
+        background-image: url(../assets/objets/monstruos/Zombi.png);
+    }
+    &__mummy {
+        background-image: url(../assets/objets/monstruos/Momia.png);
+    }
+    &__fimir {
+        background-image: url(../assets/objets/monstruos/Fimir.png);
+    }
+    &__gargoyle {
+        background-image: url(../assets/objets/monstruos/Gargola.png);
     }
 }
 
