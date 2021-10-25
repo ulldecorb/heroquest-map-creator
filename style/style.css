@@ -1,0 +1,31 @@
+body {
+  background-color: #FF0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 2px 2px;
+  background-color: #000;
+  margin: 30px;
+  border: 2px solid #000;
+  outline: 30px double #000;
+}
+
+.cell-test {
+  background-color: #FFF;
+  height: 30px;
+  width: 30px;
+}
+/*# sourceMappingURL=style.css.map */
