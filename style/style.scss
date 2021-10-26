@@ -13,7 +13,11 @@ body {
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     grid-gap: 2px 2px;
     // background-color:#000;
-    // background-image: url();
+    background-image: url(../assets/objets/tablero/Tablero.jpg);
+    
+    background-size: 101% 102%;
+    background-position: center;
+    background-repeat: no-repeat;
 
     background-clip: content-box;
     // margin: 30px;
@@ -21,16 +25,10 @@ body {
     outline:30px double #000;
 
     &__cell {
-        background-color:#FFF;
+        // background-color:#FFF;
         height:calc(88vh/26);
         width:calc(88vh/26);
     }
-}
-
-.cell-test {
-    background-color:#FFF;
-    height:calc(88vh/26);
-    width:calc(88vh/26);
 }
 
 .icon {
@@ -75,10 +73,23 @@ body {
     }
 }
 
+.raw-map{
+    width: 97vh;
+    height: 70vh;
+    // height: auto;
+    position: absolute;
+    background-image: url(../assets/objets/tablero/Tablero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index:2;
+}
+
 // .parchment {
 //     margin-top:30px;
 //     width:780px;
 //     background-image: url(../assets/objets/pergamino.jpg);
-//     height:780px;  background-repeat: no-repeat;
+//     height:780px;  
+//     background-repeat: no-repeat;
 //     background-position: right top;
 // }
