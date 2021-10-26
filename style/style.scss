@@ -21,7 +21,7 @@ body {
 
     background-clip: content-box;
     // margin: 30px;
-    border:2px solid #000;
+    // border:2px solid rgba(0, 0, 0, 0.2);
     outline:30px double #000;
 
     &__cell {
@@ -72,24 +72,3 @@ body {
         background-image: url(../assets/objets/monstruos/Gargola.png);
     }
 }
-
-.raw-map{
-    width: 97vh;
-    height: 70vh;
-    // height: auto;
-    position: absolute;
-    background-image: url(../assets/objets/tablero/Tablero.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index:2;
-}
-
-// .parchment {
-//     margin-top:30px;
-//     width:780px;
-//     background-image: url(../assets/objets/pergamino.jpg);
-//     height:780px;  
-//     background-repeat: no-repeat;
-//     background-position: right top;
-// }
