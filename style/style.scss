@@ -31,9 +31,37 @@ body {
     }
 }
 
-.icon {
+.icon-1x1 {
     height:calc(88vh/26);
     width:calc(88vh/26);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+.icon-1x2 {
+    height:calc(88vh/26);
+    width:calc(88vh/13);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+.icon-1x3 {
+    height:calc(88vh/26);
+    width:calc(88vh/8.66);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+.icon-2x3 {
+    height:calc(88vh/8.66);
+    width:calc(88vh/13);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+.icon-3x2 {
+    height:calc(88vh/13);
+    width:calc(88vh/8.66);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
@@ -42,10 +70,18 @@ body {
 .icons{
     position: fixed;
     top:30px;
-    left:100px;
-    height: 200px;
-    width: 100px;
+    left: 100px;
+    height: 500px;
+    width: calc((88vh/8.66)+10px);
     margin-top: 30px;
+
+    &__monsters {
+        height:calc((88vh/26)*3);
+        width:calc((88vh/26)*3);
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
 
     &__skull {
         background-image: url(../assets/objets/monstruos/Esqueleto.png);
@@ -70,5 +106,38 @@ body {
     }
     &__gargoyle {
         background-image: url(../assets/objets/monstruos/Gargola.png);
+    }
+    &__alchimist {
+        background-image: url(../assets/objets/muebles/Banco-de-alquimista.png);
+    }
+    &__fireplace {
+        background-image: url(../assets/objets/muebles/Chimenea.png);
+    }
+    &__vault {
+        background-image: url(../assets/objets/muebles/Cofre.png);
+    }
+    &__bookshelf-1 {
+        background-image: url(../assets/objets/muebles/Libreria-1.png);
+    }
+    &__bookshelf-2 {
+        background-image: url(../assets/objets/muebles/Libreria-2.png);
+    }
+    &__table {
+        background-image: url(../assets/objets/muebles/Mesa.png);
+    }
+    &__wizard-table {
+        background-image: url(../assets/objets/muebles/Mesa-de-brujo.png);
+    }
+    &__armory {
+        background-image: url(../assets/objets/muebles/Panoplia-de-armas.png);
+    }
+    &__torture-colt {
+        background-image: url(../assets/objets/muebles/Portro-de-tortura.png);
+    }
+    &__throne {
+        background-image: url(../assets/objets/muebles/Trono.png);
+    }
+    &__grave {
+        background-image: url(../assets/objets/muebles/Tumba.png);
     }
 }

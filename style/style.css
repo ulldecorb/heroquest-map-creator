@@ -35,9 +35,41 @@ body {
   width: calc(88vh/26);
 }
 
-.icon {
+.icon-1x1 {
   height: calc(88vh/26);
   width: calc(88vh/26);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-1x2 {
+  height: calc(88vh/26);
+  width: calc(88vh/13);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-1x3 {
+  height: calc(88vh/26);
+  width: calc(88vh/8.66);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-2x3 {
+  height: calc(88vh/8.66);
+  width: calc(88vh/13);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-3x2 {
+  height: calc(88vh/13);
+  width: calc(88vh/8.66);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,9 +79,24 @@ body {
   position: fixed;
   top: 30px;
   left: 100px;
-  height: 200px;
-  width: 100px;
+  height: 500px;
+  width: calc((88vh/8.66)+10px);
   margin-top: 30px;
+}
+
+.icons__monsters {
+  height: calc((88vh/26)*3);
+  width: calc((88vh/26)*3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .icons__skull {
@@ -82,5 +129,49 @@ body {
 
 .icons__gargoyle {
   background-image: url(../assets/objets/monstruos/Gargola.png);
+}
+
+.icons__alchimist {
+  background-image: url(../assets/objets/muebles/Banco-de-alquimista.png);
+}
+
+.icons__fireplace {
+  background-image: url(../assets/objets/muebles/Chimenea.png);
+}
+
+.icons__vault {
+  background-image: url(../assets/objets/muebles/Cofre.png);
+}
+
+.icons__bookshelf-1 {
+  background-image: url(../assets/objets/muebles/Libreria-1.png);
+}
+
+.icons__bookshelf-2 {
+  background-image: url(../assets/objets/muebles/Libreria-2.png);
+}
+
+.icons__table {
+  background-image: url(../assets/objets/muebles/Mesa.png);
+}
+
+.icons__wizard-table {
+  background-image: url(../assets/objets/muebles/Mesa-de-brujo.png);
+}
+
+.icons__armory {
+  background-image: url(../assets/objets/muebles/Panoplia-de-armas.png);
+}
+
+.icons__torture-colt {
+  background-image: url(../assets/objets/muebles/Portro-de-tortura.png);
+}
+
+.icons__throne {
+  background-image: url(../assets/objets/muebles/Trono.png);
+}
+
+.icons__grave {
+  background-image: url(../assets/objets/muebles/Tumba.png);
 }
 /*# sourceMappingURL=style.css.map */
