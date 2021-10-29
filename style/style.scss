@@ -40,6 +40,9 @@ body {
     padding: 10px;
     background-color:rgb(119, 71, 71);
     border:4px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &__monsters {
         height:calc((88vh/26)*3);
@@ -48,6 +51,19 @@ body {
         flex-flow: row wrap;
         justify-content: flex-start;
         margin-bottom: 10px;
+    }
+
+    &__furniture {
+        margin: 5px 0;
+    }
+
+    &__doors-traps {
+        height:calc((88vh/26)*3);
+        width:calc((88vh/26)*3);
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        // margin-bottom: 10px;
     }
 
 }
@@ -114,5 +130,23 @@ body {
     }
     &__grave {
         background-image: url(../assets/objets/muebles/Tumba.png);
+    }
+}
+
+.doors-traps {
+    &__door {
+        background-image: url(../assets/objets/puertas/Puerta.png);
+    }
+    &__secret-door {
+        background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
+    }
+    &__fall-rocks {
+        background-image: url(../assets/objets/trampas/Roca-caida.png);
+    }
+    &__spear {
+        background-image: url(../assets/objets/trampas/Lanzas.png);
+    }
+    &__abyss {
+        background-image: url(../assets/objets/trampas/Abismo.png);
     }
 }
