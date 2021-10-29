@@ -1,79 +1,45 @@
+@import 'icons-size';
+
 body {
-    background-color:#FF0000;
+    background-image: url(../assets/background/stone-texture.svg);
+    background-size: 20%;
     height: 100vh;
+    width:100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .map {
     display: inline-grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     grid-gap: 2px 2px;
-    // background-color:#000;
     background-image: url(../assets/objets/tablero/Tablero.jpg);
-    
     background-size: 101% 102%;
     background-position: center;
     background-repeat: no-repeat;
-
     background-clip: content-box;
-    // margin: 30px;
-    // border:2px solid rgba(0, 0, 0, 0.2);
-    outline:30px double #000;
+    outline:30px solid #000;
 
     &__cell {
-        // background-color:#FFF;
         height:calc(88vh/26);
         width:calc(88vh/26);
     }
 }
 
-.icon-1x1 {
-    height:calc(88vh/26);
-    width:calc(88vh/26);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
-}
-.icon-1x2 {
-    height:calc(88vh/26);
-    width:calc(88vh/13);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
-}
-.icon-1x3 {
-    height:calc(88vh/26);
-    width:calc(88vh/8.66);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
-}
-.icon-2x3 {
-    height:calc(88vh/8.66);
-    width:calc(88vh/13);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
-}
-.icon-3x2 {
-    height:calc(88vh/13);
-    width:calc(88vh/8.66);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
-}
-
 .icons{
     position: fixed;
+    border-radius: 10px;
     top:30px;
     left: 100px;
-    height: 500px;
+    height: 80vh;
     width: calc((88vh/8.66)+10px);
-    margin-top: 30px;
+    margin-top: 5vh;
+    padding: 10px;
+    background-color:rgb(119, 71, 71);
+    border:4px solid #000;
 
     &__monsters {
         height:calc((88vh/26)*3);
@@ -81,8 +47,13 @@ body {
         display:flex;
         flex-flow: row wrap;
         justify-content: flex-start;
+        margin-bottom: 10px;
     }
 
+}
+
+.monsters {
+    
     &__skull {
         background-image: url(../assets/objets/monstruos/Esqueleto.png);
     }
@@ -107,6 +78,10 @@ body {
     &__gargoyle {
         background-image: url(../assets/objets/monstruos/Gargola.png);
     }
+}
+
+.furniture {
+
     &__alchimist {
         background-image: url(../assets/objets/muebles/Banco-de-alquimista.png);
     }
