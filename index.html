@@ -37,11 +37,11 @@
             <div id="gargoyle" class="monsters__gargoyle icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
         </div>
         <div class="icons__furniture">
-            <div id="vault" class="furniture__vault icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
-            <div id="throne" class="furniture__throne icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
+            <div id="vault" class="furniture__vault icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
+            <div id="throne" class="furniture__throne icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="armory" class="furniture__armory icon-1x3"  draggable="true" ondragstart="drag(event)"></div>
             <div id="fireplace" class="furniture__fireplace icon-1x3"  draggable="true" ondragstart="drag(event)"></div>
-            <div id="alchimist" class="furniture__alchimist icon-3x2"  draggable="true" ondragstart="drag(event)"></div>
+            <div id="alchimist" class="furniture__alchimist icon-3x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="bookshelf-1" class="furniture__bookshelf-1 icon-1x3"  draggable="true" ondragstart="drag(event)"></div>
             <div id="bookshelf-2" class="furniture__bookshelf-2 icon-1x3"  draggable="true" ondragstart="drag(event)"></div>
             <div id="table" class="furniture__table icon-3x2"  draggable="true" ondragstart="drag(event)"></div>
@@ -58,7 +58,7 @@
             <div id="stairs" class="doors-traps__stairs icon-2x2"  draggable="true" ondragstart="drag(event)"></div>
         </div>
     </div>
-    <script>
+    <!-- <script>
         function fillMapCells () {
             let map = document.getElementById("map");
 
@@ -71,6 +71,7 @@
             }
         }
         fillMapCells();
-    </script>
+    </script> -->
 </body>
+<script src="./main.js"></script>
 </html>
