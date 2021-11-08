@@ -1,6 +1,4 @@
-fillMapCells();
-
-function fillMapCells () {
+(function fillMapCells () {
     let map = document.getElementById("map");
 
     for(let i = 0; i < 494; i++){
@@ -10,11 +8,11 @@ function fillMapCells () {
         cell.setAttribute( "ondragover", 'allowDrop(event)' );
         map.appendChild(cell);
     }
-}
+})()
 
 function rotateElement (event) {
     const currentElement = document.getElementById(event.target.id);
-    
+
     switch(currentElement.style.transform){
         case 'rotate(0.25turn)':
             currentElement.style.transform = 'rotate(0.5turn)';
