@@ -147,6 +147,11 @@ body {
         background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
         margin-top: calc(-88vh/52);
     }
+    &__secret-door-lateral {
+        background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
+        margin-left: calc(-88vh/52);
+        transform: rotate(0.25turn)
+    }
     &__fall-rocks {
         background-image: url(../assets/objets/trampas/Roca-caida.png);
     }
