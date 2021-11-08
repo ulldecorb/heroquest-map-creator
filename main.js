@@ -9,11 +9,13 @@
         map.appendChild(cell);
     }
 })()
+
 duplicateMonsters();
 function duplicateMonsters() {
     const monsters = document.getElementById('monsters');
     const skull = document.getElementById('skull');
     const skullCopy = skull.cloneNode(true);
+    skullCopy.id = skull.id +'1';
     monsters.appendChild(skullCopy);
 }
 
@@ -37,4 +39,18 @@ function rotateElement (event) {
             currentElement.style.transform = 'rotate(0.25turn)';
             break;
     }
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
 }
