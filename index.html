@@ -36,6 +36,7 @@
         </div>
         <div class="icons__doors-traps">
             <div id="door" class="doors-traps__door icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
+            <div id="door-lateral" class="doors-traps__door-lateral icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="secret-door" class="doors-traps__secret-door icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="fall-rocks" class="doors-traps__fall-rocks icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="spear" class="doors-traps__spear icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
@@ -43,20 +44,6 @@
             <div id="stairs" class="doors-traps__stairs icon-2x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
         </div>
     </div>
-    <!-- <script>
-        function fillMapCells () {
-            let map = document.getElementById("map");
-
-            for(let i = 0; i < 494; i++){
-                const cell = document.createElement( "DIV" );
-                cell.setAttribute( "class", 'map__cell');
-                cell.setAttribute( "ondrop", 'drop(event)' );
-                cell.setAttribute( "ondragover", 'allowDrop(event)' );
-                map.appendChild(cell);
-            }
-        }
-        fillMapCells();
-    </script> -->
 </body>
 <script src="./main.js"></script>
 </html>

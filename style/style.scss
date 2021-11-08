@@ -138,6 +138,11 @@ body {
         background-image: url(../assets/objets/puertas/Puerta.png);
         margin-top: calc(-88vh/52);
     }
+    &__door-lateral {
+        background-image: url(../assets/objets/puertas/Puerta.png);
+        margin-left: calc(-88vh/52);
+        transform: rotate(0.25turn)
+    }
     &__secret-door {
         background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
         margin-top: calc(-88vh/52);

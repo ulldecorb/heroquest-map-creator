@@ -21,22 +21,45 @@ function duplicateMonsters() {
 
 function rotateElement (event) {
     const currentElement = document.getElementById(event.target.id);
+    const classIcon1x3 = 'icon-1x3';
+    const classIcon3x2 = 'icon-3x2';
 
     switch(currentElement.style.transform){
         case 'rotate(0.25turn)':
             currentElement.style.transform = 'rotate(0.5turn)';
+            event.target.className.includes(classIcon3x2) && (currentElement.style.marginTop = '0');
+            event.target.className.includes(classIcon3x2) && (currentElement.style.marginLeft = '0');
+            event.target.className.includes(classIcon1x3) && (currentElement.style.marginTop = '0');
+            event.target.className.includes(classIcon1x3) && (currentElement.style.marginLeft = '0');
             break;
-        case 'rotate(0.5turn)':
-            currentElement.style.transform = 'rotate(0.75turn)';
-            break;
-        case 'rotate(0.75turn)':
-            currentElement.style.transform = 'rotate(0turn)';
-            break;
-        case 'rotate(0turn)':
-            currentElement.style.transform = 'rotate(0.25turn)';
-            break;
-        default:
-            currentElement.style.transform = 'rotate(0.25turn)';
+            case 'rotate(0.5turn)':
+                currentElement.style.transform = 'rotate(0.75turn)';
+                event.target.className.includes(classIcon3x2) && (currentElement.style.marginTop = '2vh');
+                event.target.className.includes(classIcon3x2) && (currentElement.style.marginLeft = '-1.7vh');
+                event.target.className.includes(classIcon1x3) && (currentElement.style.marginTop = '3.5vh');
+                event.target.className.includes(classIcon1x3) && (currentElement.style.marginLeft = '-3.1vh');
+                break;
+                case 'rotate(0.75turn)':
+                    currentElement.style.transform = 'rotate(0turn)';
+                    event.target.className.includes(classIcon3x2) && (currentElement.style.marginTop = '0');
+                    event.target.className.includes(classIcon3x2) && (currentElement.style.marginLeft = '0');
+                    event.target.className.includes(classIcon1x3) && (currentElement.style.marginTop = '0');
+                    event.target.className.includes(classIcon1x3) && (currentElement.style.marginLeft = '0');
+                    break;
+                    case 'rotate(0turn)':
+                        currentElement.style.transform = 'rotate(0.25turn)';
+                        event.target.className.includes(classIcon3x2) && (currentElement.style.marginTop = '2vh');
+                        event.target.className.includes(classIcon3x2) && (currentElement.style.marginLeft = '-1.7vh');
+                        event.target.className.includes(classIcon1x3) && (currentElement.style.marginTop = '3.5vh');
+                        event.target.className.includes(classIcon1x3) && (currentElement.style.marginLeft = '-3.1vh');
+                        break;
+                        default:
+                            currentElement.style.transform = 'rotate(0.25turn)';
+                            event.target.className.includes(classIcon3x2) && (currentElement.style.marginTop = '2vh');
+                            event.target.className.includes(classIcon3x2) && (currentElement.style.marginLeft = '-1.7vh');
+                            event.target.className.includes(classIcon1x3) && (currentElement.style.marginTop = '3.5vh');
+                            event.target.className.includes(classIcon1x3) && (currentElement.style.marginLeft = '-3.1vh');
+
             break;
     }
 }
