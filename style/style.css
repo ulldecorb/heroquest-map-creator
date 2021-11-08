@@ -217,10 +217,12 @@ body {
 
 .doors-traps__door {
   background-image: url(../assets/objets/puertas/Puerta.png);
+  margin-top: calc(-88vh/52);
 }
 
 .doors-traps__secret-door {
   background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
+  margin-top: calc(-88vh/52);
 }
 
 .doors-traps__fall-rocks {

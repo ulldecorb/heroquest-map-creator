@@ -9,6 +9,13 @@
         map.appendChild(cell);
     }
 })()
+duplicateMonsters();
+function duplicateMonsters() {
+    const monsters = document.getElementById('monsters');
+    const skull = document.getElementById('skull');
+    const skullCopy = skull.cloneNode(true);
+    monsters.appendChild(skullCopy);
+}
 
 function rotateElement (event) {
     const currentElement = document.getElementById(event.target.id);
