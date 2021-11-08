@@ -220,6 +220,13 @@ body {
   margin-top: calc(-88vh/52);
 }
 
+.doors-traps__door-lateral {
+  background-image: url(../assets/objets/puertas/Puerta.png);
+  margin-left: calc(-88vh/52);
+  -webkit-transform: rotate(0.25turn);
+          transform: rotate(0.25turn);
+}
+
 .doors-traps__secret-door {
   background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
   margin-top: calc(-88vh/52);
