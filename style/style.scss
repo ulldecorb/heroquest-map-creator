@@ -1,3 +1,4 @@
+@import 'variables';
 @import 'icons-size';
 
 body {
@@ -8,20 +9,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     overflow: hidden;
 }
 
 .map {
     display: inline-grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-gap: 2px 2px;
+    // grid-gap: 2px 2px;
     background-image: url(../assets/objets/tablero/Tablero.jpg);
     background-size: 101% 102%;
     background-position: center;
     background-repeat: no-repeat;
     background-clip: content-box;
-    outline:30px solid #000;
+    outline:3vh solid #000;
 
     &__cell {
         height:calc(88vh/26);
@@ -38,7 +39,7 @@ body {
     margin: 2.5vh 0;
     padding: 10px;
     background-color:rgb(255, 255, 255);
-    border:4px solid #000;
+    border:0.6vh solid #000;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -131,6 +132,11 @@ body {
     &__grave {
         background-image: url(../assets/objets/muebles/Tumba.png);
     }
+    &__1x1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .doors-traps {
@@ -138,22 +144,15 @@ body {
         background-image: url(../assets/objets/puertas/Puerta.png);
         margin-top: calc(-88vh/52);
     }
-    &__door-lateral {
-        background-image: url(../assets/objets/puertas/Puerta.png);
-        margin-left: calc(-88vh/52);
-        transform: rotate(0.25turn)
-    }
     &__secret-door {
         background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
         margin-top: calc(-88vh/52);
     }
-    &__secret-door-lateral {
-        background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
-        margin-left: calc(-88vh/52);
-        transform: rotate(0.25turn)
-    }
     &__fall-rocks {
         background-image: url(../assets/objets/trampas/Roca-caida.png);
+    }
+    &__fall-rocksx2 {
+        background-image: url(../assets/objets/trampas/Roca-caida-doble.png);
     }
     &__spear {
         background-image: url(../assets/objets/trampas/Lanzas.png);
