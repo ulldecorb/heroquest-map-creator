@@ -10,14 +10,14 @@
     }
 })()
 
-duplicateMonsters();
-function duplicateMonsters() {
-    const monsters = document.getElementById('monsters');
-    const skull = document.getElementById('skull');
-    const skullCopy = skull.cloneNode(true);
-    skullCopy.id = skull.id +'1';
-    monsters.appendChild(skullCopy);
-}
+// duplicateMonsters();
+// function duplicateMonsters() {
+//     const monsters = document.getElementById('monsters');
+//     const skull = document.getElementById('skull');
+//     const skullCopy = skull.cloneNode(true);
+//     skullCopy.id = skull.id +'1';
+//     monsters.appendChild(skullCopy);
+// }
 
 function rotateElement (event) {
     const currentElement = document.getElementById(event.target.id);
@@ -84,17 +84,27 @@ function rotateElement (event) {
         break;
     }
 }
-                    
+
+function eraseIcon(event) {
+    const currentElement = document.getElementById(event.target.id);
+    currentElement.style.display = 'none';
+}
+
 function allowDrop(ev) {
     ev.preventDefault();
 }
 
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
+    // ev.currentTarget.style.border = '2px solid red';
 }
 
 function drop(ev) {
     ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+    const data = ev.dataTransfer.getData("text");
+    // ev.target.appendChild(document.getElementById(data).cloneNode(true));
+
+    const currentElement = document.getElementById(data);
+    data ? ev.target.appendChild(document.getElementById(data).cloneNode(true)) : (currentElement.style.display = 'none')
+    
 }
