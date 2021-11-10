@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>HeroQuest Creator</title>
 </head>
-<body ondrop="() => deleteIcon(event)">
+<body>
     <section id="map" class="map">
     </section>
     <div class="icons">
         <div id="monsters" class="icons__monsters">
-            <div id="skull" class="monsters__skull icon-1x1"  draggable="true" ondragstart="drag(event)" onkeypress="deleteIcon()"></div>
+            <div id="skull" class="monsters__skull icon-1x1"  draggable="true" ondragstart="drag(event)"ondragend="() => end(event)"></div>
             <div id="ork" class="monsters__ork icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
             <div id="goblin" class="monsters__goblin icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
             <div id="chaos-warrior" class="monsters__chaos-warrior icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
