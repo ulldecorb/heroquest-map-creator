@@ -66,7 +66,7 @@ body {
         flex-flow: row wrap;
         justify-content: flex-start;
         padding: 1vh;
-        margin: 5px 0;
+        margin: 5px 1vh;
     }
     
     &__doors-traps {
@@ -81,7 +81,36 @@ body {
         justify-content: flex-start;
         // margin-bottom: 1vh;
     }
-
+    
+    .buttons {
+        margin: 1vh;
+        // margin: 1vh 0;
+        padding: 1vh;
+        height: calc((88vh/52)*2);
+        width:calc((88vh/26)*3);
+        display: flex;
+        justify-content: space-between;
+        
+        .button {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:calc((88vh/20));
+            width:calc((88vh/20));
+            // margin: 0 1vh;
+            // padding: 1vh;
+            background-color: red;
+            text-align: center;
+            color: rgb(236, 221, 8);
+            border-radius: 1vh;
+            font-size: 0.5em;
+            &:hover {
+                background-color: orange;
+                color: red;
+            }
+        }
+    }
 }
 
 .monsters {
@@ -124,10 +153,10 @@ body {
     &__vault {
         background-image: url(../assets/objets/muebles/Cofre.png);
     }
-    &__bookshelf-1 {
+    &__bookshelf-first {
         background-image: url(../assets/objets/muebles/Libreria-1.png);
     }
-    &__bookshelf-2 {
+    &__bookshelf-double {
         background-image: url(../assets/objets/muebles/Libreria-2.png);
     }
     &__table {
@@ -159,6 +188,7 @@ body {
     &__door {
         background-image: url(../assets/objets/puertas/Puerta.png);
         margin-top: calc(-88vh/52);
+
     }
     &__secret-door {
         background-image: url(../assets/objets/puertas/Puerta-secreta-1.png);
@@ -167,7 +197,7 @@ body {
     &__fall-rocks {
         background-image: url(../assets/objets/trampas/Roca-caida.png);
     }
-    &__fall-rocksx2 {
+    &__fall-rocks-double {
         background-image: url(../assets/objets/trampas/Roca-caida-doble.png);
     }
     &__spear {

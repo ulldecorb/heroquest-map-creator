@@ -13,7 +13,7 @@
     </section>
     <div class="icons">
         <div id="monsters" class="icons__monsters">
-            <div id="skull" class="monsters__skull icon-1x1"  draggable="true" ondragstart="drag(event)"ondragend="() => end(event)"></div>
+            <div id="skull" class="monsters__skull icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
             <div id="ork" class="monsters__ork icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
             <div id="goblin" class="monsters__goblin icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
             <div id="chaos-warrior" class="monsters__chaos-warrior icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
@@ -26,8 +26,8 @@
             <div id="armory" class="furniture__armory icon-1x3"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="fireplace" class="furniture__fireplace icon-1x3"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="alchimist" class="furniture__alchimist icon-3x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
-            <div id="bookshelf-1" class="furniture__bookshelf-1 icon-1x3"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
-            <div id="bookshelf-2" class="furniture__bookshelf-2 icon-1x3"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
+            <div id="bookshelf-fisrt" class="furniture__bookshelf-first icon-1x3"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
+            <div id="bookshelf-second" class="furniture__bookshelf-double icon-1x3"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="table" class="furniture__table icon-3x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="torture-colt" class="furniture__torture-colt icon-3x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="wizard-table" class="furniture__wizard-table icon-3x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
@@ -42,9 +42,13 @@
             <div id="secret-door" class="doors-traps__secret-door icon-1x1 secret-door"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="fall-rocks" class="doors-traps__fall-rocks icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="spear" class="doors-traps__spear icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
-            <div id="fall-rocksx2" class="doors-traps__fall-rocksx2 icon-1x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
+            <div id="fall-rocks-double" class="doors-traps__fall-rocks-double icon-1x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="abyss" class="doors-traps__abyss icon-1x1"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
             <div id="stairs" class="doors-traps__stairs icon-2x2"  draggable="true" ondragstart="drag(event)" ondblclick="rotateElement(event)"></div>
+        </div>
+        <div class="buttons">
+            <div class="button"  ondragover="deleteIcon(event)" ondrop="allowDrop(event)">ERASE</div>
+            <div class="button">RESET</div>
         </div>
     </div>
 </body>
