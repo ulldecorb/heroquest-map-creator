@@ -79,56 +79,23 @@ function rotateElement (event) {
 }
 
 function deleteIcon(event) {
-    const currentElement = document.getElementById(event.dataTransfer.getData("text"));
-    currentElement.parentNode.removeChild(elementoArrastrado);
+    const elementToDelete = document.getElementById(event.dataTransfer.getData("text"));
+    elementToDelete.parentNode.removeChild(elementToDelete);
 }
-
-
 
 function allowDrop(ev) {
     ev.preventDefault();
 }
 
 function drag(ev) {
-    const selectIconToClone = document.getElementById(ev.target.id);
-    const cloneIcon = selectIconToClone.cloneNode(true);
-    cloneIcon.id = cloneIcon.id + counterId;
-    // counterId += 1;
-    console.log('cloneIcon =>' + typeof(cloneIcon.id)+' '+cloneIcon.id);
-    console.log('ev.target.id =>' + typeof(ev.target.id)+' ' +ev.target.id);
-
-    console.log(cloneIcon.isConnected);
-    
     ev.dataTransfer.setData("text", ev.target.id);
-    
-    // ev.currentTarget.style.borderRadius = '50%';
-    // ev.currentTarget.style.border = '2px solid red';
+    ev.style.borderRadius = '50%';
+    ev.style.border = '2px solid red';
 }
 
 function drop(ev) {
     ev.preventDefault();
     const data = ev.dataTransfer.getData("text");
-    // console.log('data ' + data)
-
-    // const selectIconToClone = document.getElementById(data);
-    // const cloneIcon = selectIconToClone.cloneNode(true);
-    // cloneIcon.id = cloneIcon.id + counterId;
-    // counterId += 1;
-    
-    // console.log('cloneIcon =>' + typeof(cloneIcon.id)+' '+ cloneIcon.id);
-    // console.log('ev.target.id =>' + typeof(ev.target.id)+' ' +ev.target.id);
-    
-    // console.log('conected? ' + cloneIcon.isConnected);
-    // console.log(cloneIcon.isConnected);
-    
-    
-    
-    
-    
-    // const cloneIcon = data.cloneNode(true);
-    // cloneIcon.id = e.dataTransfer.getData("text") + counterId;
-    // counterId += 1;
-    // data ? ev.target.appendChild(cloneIcon) : ev.target.removeChild(document.getElementById(data));    
     if (data.search(/[0-9]/) === -1)
     { 
         const selectIconToClone = document.getElementById(data);

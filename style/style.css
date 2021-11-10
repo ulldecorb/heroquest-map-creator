@@ -134,7 +134,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 1vh;
-  margin: 5px 0;
+  margin: 5px 1vh;
 }
 
 .icons__doors-traps {
@@ -154,6 +154,44 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.icons .buttons {
+  margin: 1vh;
+  padding: 1vh;
+  height: calc((88vh/52)*2);
+  width: calc((88vh/26)*3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icons .buttons .button {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc((88vh/20));
+  width: calc((88vh/20));
+  background-color: red;
+  text-align: center;
+  color: #ecdd08;
+  border-radius: 1vh;
+  font-size: 0.5em;
+}
+
+.icons .buttons .button:hover {
+  background-color: orange;
+  color: red;
 }
 
 .monsters__skull {
@@ -200,11 +238,11 @@ body {
   background-image: url(../assets/objets/muebles/Cofre.png);
 }
 
-.furniture__bookshelf-1 {
+.furniture__bookshelf-first {
   background-image: url(../assets/objets/muebles/Libreria-1.png);
 }
 
-.furniture__bookshelf-2 {
+.furniture__bookshelf-double {
   background-image: url(../assets/objets/muebles/Libreria-2.png);
 }
 
@@ -259,7 +297,7 @@ body {
   background-image: url(../assets/objets/trampas/Roca-caida.png);
 }
 
-.doors-traps__fall-rocksx2 {
+.doors-traps__fall-rocks-double {
   background-image: url(../assets/objets/trampas/Roca-caida-doble.png);
 }
 
