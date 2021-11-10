@@ -13,7 +13,8 @@ This project is a webpage where create old fantasy rol game HeroQuest maps.
 Add game icons over the HeroQuest original map.  
 Rotate furniture, doors and traps to correct layout.  
 ### To Do:
-Delete icons functionality.  
-Reset map functionality.  
+Functionality to delete icons.  
+Functionality to reset map.  
 Chance to add text inputs.  
 Print map to pdf file and allow download it.  
+Add border for icons when there are dragged on.
