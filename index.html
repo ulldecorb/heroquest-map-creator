@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://icon-library.com/images/icon-sword/icon-sword-26.jpg" type="image/png">
     <link rel="stylesheet" href="./style/style.css">
     <title>HeroQuest Creator</title>
 </head>
-<body>
+<body ondrop="() => deleteIcon(event)">
     <section id="map" class="map">
     </section>
     <div class="icons">
         <div id="monsters" class="icons__monsters">
-            <div id="skull" class="monsters__skull icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
+            <div id="skull" class="monsters__skull icon-1x1"  draggable="true" ondragstart="drag(event)" onkeypress="deleteIcon()"></div>
             <div id="ork" class="monsters__ork icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
             <div id="goblin" class="monsters__goblin icon-1x1"  draggable="true" ondragstart="drag(event)"></div>
             <div id="chaos-warrior" class="monsters__chaos-warrior icon-1x1"  draggable="true" ondragstart="drag(event)"></div>

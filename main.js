@@ -1,3 +1,5 @@
+let counterId = 0;
+
 (function fillMapCells () {
     let map = document.getElementById("map");
 
@@ -9,15 +11,6 @@
         map.appendChild(cell);
     }
 })()
-
-// duplicateMonsters();
-// function duplicateMonsters() {
-//     const monsters = document.getElementById('monsters');
-//     const skull = document.getElementById('skull');
-//     const skullCopy = skull.cloneNode(true);
-//     skullCopy.id = skull.id +'1';
-//     monsters.appendChild(skullCopy);
-// }
 
 function rotateElement (event) {
     const currentElement = document.getElementById(event.target.id);
@@ -85,10 +78,12 @@ function rotateElement (event) {
     }
 }
 
-function eraseIcon(event) {
-    const currentElement = document.getElementById(event.target.id);
-    currentElement.style.display = 'none';
+function deleteIcon(event) {
+    const currentElement = document.getElementById(event.dataTransfer.getData("text"));
+    currentElement.parentNode.removeChild(elementoArrastrado);
 }
+
+
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -102,9 +97,12 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     const data = ev.dataTransfer.getData("text");
-    // ev.target.appendChild(document.getElementById(data).cloneNode(true));
-
-    const currentElement = document.getElementById(data);
-    data ? ev.target.appendChild(document.getElementById(data).cloneNode(true)) : (currentElement.style.display = 'none')
+    
+    // console.log(
+    //     ev.target.appendChild(document.getElementById(data).cloneNode(true))
+    // )
+    // const currentElement = document.getElementById(data);
+    
+    data ? ev.target.appendChild(document.getElementById(data).cloneNode(true)) : ev.target.removeChild(document.getElementById(data));
     
 }
