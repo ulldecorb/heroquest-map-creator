@@ -80,16 +80,13 @@ body {
 }
 
 .icons {
-  height: 90vh;
-  width: calc((88vh/8.66)+10px);
+  height: 100vh;
+  width: calc((88vh/8.66)+12px);
   position: fixed;
-  left: 100px;
+  left: 0;
   top: 0;
-  margin: 2.5vh 0;
-  padding: 10px;
-  background-color: white;
-  border: 0.6vh solid #000;
-  border-radius: 10px;
+  background-color: black;
+  border-right: 0.6vh solid #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,6 +102,8 @@ body {
 .icons__monsters {
   height: calc((88vh/26)*3);
   width: calc((88vh/26)*3);
+  margin: 1vh;
+  padding: 1vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,14 +114,34 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 10px;
+  border-radius: 1vh;
+  background-color: white;
 }
 
 .icons__furniture {
+  margin: 1vh;
+  border-radius: 1vh;
+  background-color: white;
+  width: calc((88vh/26)*3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1vh;
   margin: 5px 0;
 }
 
 .icons__doors-traps {
+  margin: 1vh;
+  border-radius: 1vh;
+  background-color: white;
+  padding: 1vh;
   height: calc((88vh/26)*4);
   width: calc((88vh/26)*3);
   display: -webkit-box;
