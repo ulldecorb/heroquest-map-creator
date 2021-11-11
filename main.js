@@ -96,19 +96,19 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     const data = ev.dataTransfer.getData("text");
-    if (data.search(/[0-9]/) === -1)
-    { 
-        const selectIconToClone = document.getElementById(data);
-        const cloneIcon = selectIconToClone.cloneNode(true);
-        cloneIcon.id = cloneIcon.id + counterId;
-        counterId += 1;
-        ev.target.appendChild(cloneIcon) 
-    }
-    else{
-        ev.target.appendChild(document.getElementById(data));    
-    }
+    data.search(/[0-9]/) === -1 
+    ? ev.target.appendChild(cloneIcon(data)) 
+    :ev.target.appendChild(document.getElementById(data));    
 }
 
+function cloneIcon(idToClone) {
+    const selectIconToClone = document.getElementById(idToClone);
+        const cloneIcon = selectIconToClone.cloneNode(true);
+        cloneIcon.id = cloneIcon.id + counterId;
+        cloneIcon.setAttribute( "tabindex", counterId);
+        counterId += 1;
+        return cloneIcon;
+}
 
 
 // function end(e){

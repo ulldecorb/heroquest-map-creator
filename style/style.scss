@@ -114,7 +114,7 @@ body {
 }
 
 .monsters {
-    // border-radius: 50%;
+    border-radius: 50%;
 
     &__skull {
         background-image: url(../assets/objets/monstruos/Esqueleto.png);
@@ -208,5 +208,11 @@ body {
     }
     &__stairs {
         background-image: url(../assets/objets/puertas/Escalera.png);
+    }
+}
+
+[tabindex] {
+    &:hover{
+        outline: 2px solid red;
     }
 }

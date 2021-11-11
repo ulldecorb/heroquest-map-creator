@@ -194,6 +194,10 @@ body {
   color: red;
 }
 
+.monsters {
+  border-radius: 50%;
+}
+
 .monsters__skull {
   background-image: url(../assets/objets/monstruos/Esqueleto.png);
 }
@@ -311,5 +315,9 @@ body {
 
 .doors-traps__stairs {
   background-image: url(../assets/objets/puertas/Escalera.png);
+}
+
+[tabindex]:hover {
+  outline: 2px solid red;
 }
 /*# sourceMappingURL=style.css.map */
