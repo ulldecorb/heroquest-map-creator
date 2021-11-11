@@ -18,3 +18,4 @@ Functionality to reset map.
 Chance to add text inputs.  
 Print map to pdf file and allow download it.  
 Add border for icons when there are dragged on.
+Add grey background to the unused map's cells. 
