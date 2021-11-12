@@ -4,15 +4,16 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .icon-1x2 {
   height: calc(88vh/26);
   width: calc(88vh/13);
-  margin: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .icon-1x3 {
@@ -21,6 +22,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .icon-2x2 {
@@ -29,6 +31,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .icon-3x2 {
@@ -38,6 +41,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 body {
@@ -61,6 +65,15 @@ body {
   overflow: hidden;
 }
 
+.trash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  cursor: help;
+}
+
 .map {
   display: -ms-inline-grid;
   display: inline-grid;
@@ -72,6 +85,7 @@ body {
   background-repeat: no-repeat;
   background-clip: content-box;
   outline: 3vh solid #000;
+  z-index: 2;
 }
 
 .map__cell {
