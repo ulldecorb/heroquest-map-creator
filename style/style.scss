@@ -96,7 +96,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height:calc((88vh/20));
+            height:calc(($map-scale/20));
             width:calc((88vh/20));
             // margin: 0 1vh;
             // padding: 1vh;

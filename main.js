@@ -1,16 +1,30 @@
 let counterId = 0;
+fillMapCells();
 
-(function fillMapCells () {
+function fillMapCells () {
     let map = document.getElementById("map");
 
     for(let i = 0; i < 494; i++){
         const cell = document.createElement( "DIV" );
+        cell.id = 'cell' + i;
         cell.setAttribute( "class", 'map__cell');
         cell.setAttribute( "ondrop", 'drop(event)' );
         cell.setAttribute( "ondragover", 'allowDrop(event)' );
         map.appendChild(cell);
     }
-})()
+}
+// (function fillMapCells () {
+//     let map = document.getElementById("map");
+
+//     for(let i = 0; i < 494; i++){
+//         const cell = document.createElement( "DIV" );
+//         cell.id = 'cell' + i;
+//         cell.setAttribute( "class", 'map__cell');
+//         cell.setAttribute( "ondrop", 'drop(event)' );
+//         cell.setAttribute( "ondragover", 'allowDrop(event)' );
+//         map.appendChild(cell);
+//     }
+// })()
 
 function rotateElement (event) {
     const currentElement = document.getElementById(event.target.id);
@@ -76,6 +90,12 @@ function rotateElement (event) {
             event.target.className.includes(classIcon1x3) && (currentElement.style.marginLeft = '-3.1vh');
         break;
     }
+}
+
+function resetMap() {
+    const map = document.getElementById('map');
+    map.innerHTML = '';
+    fillMapCells();
 }
 
 function deleteIcon(event) {
