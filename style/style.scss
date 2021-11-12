@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'icons-size';
 
+
+$map-scale: 88vh;
+
+
 body {
     background-image: url(../assets/background/stone-texture.svg);
     background-size: 20%;
@@ -13,6 +17,16 @@ body {
     overflow: hidden;
 }
 
+.trash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100vw;
+    // z-index: -1;
+    cursor: help;
+}
+
 .map {
     display: inline-grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
@@ -23,6 +37,7 @@ body {
     background-repeat: no-repeat;
     background-clip: content-box;
     outline:3vh solid #000;
+    z-index: 2;
 
     &__cell {
         height:calc(88vh/26);
