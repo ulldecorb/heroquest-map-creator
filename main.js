@@ -1,5 +1,14 @@
 let counterId = 0;
 fillMapCells();
+// document.addEventListener('keydown', cloneItemOnMap(event));
+
+document.getElementById('map').onkeydown = function(event) { cloneItemOnMap(event) };
+
+// function test(e) {
+//     console.log(e.key);
+//     alert(e.key);
+    // alert('guay');
+// }
 
 function fillMapCells () {
     let map = document.getElementById("map");
@@ -99,7 +108,9 @@ function resetMap() {
 }
 
 function deleteIcon(event) {
-    const elementToDelete = document.getElementById(event.dataTransfer.getData("text"));
+    const data = event.dataTransfer.getData("text");
+    const elementToDelete = document.getElementById(data);
+    data.search(/[0-9]/) !== -1 &&
     elementToDelete.parentNode.removeChild(elementToDelete);
 }
 
@@ -118,7 +129,7 @@ function drop(ev) {
     const data = ev.dataTransfer.getData("text");
     data.search(/[0-9]/) === -1 
     ? ev.target.appendChild(cloneIcon(data)) 
-    :ev.target.appendChild(document.getElementById(data));    
+    : ev.target.appendChild(document.getElementById(data));    
 }
 
 function cloneIcon(idToClone) {
@@ -128,6 +139,19 @@ function cloneIcon(idToClone) {
         cloneIcon.setAttribute( "tabindex", counterId);
         counterId += 1;
         return cloneIcon;
+}
+
+function cloneItemOnMap(event){
+    // ev.preventDefault();
+    // const data = ev.dataTransfer.getData("text");
+    // e.key === 'Control' && ev.target.appendChild(document.getElementById(data).cloneNode(true))
+    // function firstOk(event) {
+    //     return event.key === 'Control';
+    // }
+    // function secondOk(event) {
+    //     return event.key === 'Control';
+    // }
+    if (event.key === 'Control') { alert('guai 2') };
 }
 
 function savePDF(divId, title) {
