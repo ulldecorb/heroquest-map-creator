@@ -1,29 +1,29 @@
 @import "variables";
 
 .icon-1x1 {
-    height:calc(88vh/26);
-    width:calc(88vh/26);
+    height:$map-scale/26;
+    width:$map-scale/26;
     @include icon-background-style();
 }
 .icon-1x2 {
-    height:calc(88vh/26);
-    width:calc(88vh/13);
+    height:$map-scale/26;
+    width:$map-scale/13;
     @include icon-background-style();
 }
 .icon-1x3 {
-    height:calc(88vh/26);
-    width:calc(88vh/8.66);
+    height:$map-scale/26;
+    width:$map-scale/8.66;
     @include icon-background-style();
 }
 .icon-2x2 {
-    height:calc(88vh/13);
-    width:calc(88vh/13);
+    height:$map-scale/13;
+    width:$map-scale/13;
     @include icon-background-style();
 }
 .icon-3x2 {
-    height:calc(88vh/13);
-    width:calc(88vh/8.66);
-    margin: 0.4vh 0.2vh;
+    height:$map-scale/13;
+    width:$map-scale/8.66;
+    // margin: 0.4vh 0.2vh;
     @include icon-background-style();
 }
 
