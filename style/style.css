@@ -1,6 +1,6 @@
 .icon-1x1 {
-  height: calc(88vh/26);
-  width: calc(88vh/26);
+  height: 4.61538vh;
+  width: 4.61538vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,8 +8,8 @@
 }
 
 .icon-1x2 {
-  height: calc(88vh/26);
-  width: calc(88vh/13);
+  height: 4.61538vh;
+  width: 9.23077vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,8 +17,8 @@
 }
 
 .icon-1x3 {
-  height: calc(88vh/26);
-  width: calc(88vh/8.66);
+  height: 4.61538vh;
+  width: 13.85681vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,8 +26,8 @@
 }
 
 .icon-2x2 {
-  height: calc(88vh/13);
-  width: calc(88vh/13);
+  height: 9.23077vh;
+  width: 9.23077vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,9 +35,8 @@
 }
 
 .icon-3x2 {
-  height: calc(88vh/13);
-  width: calc(88vh/8.66);
-  margin: 0.4vh 0.2vh;
+  height: 9.23077vh;
+  width: 13.85681vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,13 +88,13 @@ body {
 }
 
 .map__cell {
-  height: calc(88vh/26);
-  width: calc(88vh/26);
+  height: 4.61538vh;
+  width: 4.61538vh;
 }
 
 .icons {
   height: 100vh;
-  width: calc((88vh/8.66)+12px);
+  width: 20vh;
   position: fixed;
   left: 0;
   top: 0;
@@ -114,8 +113,8 @@ body {
 }
 
 .icons__monsters {
-  height: calc((88vh/26)*3);
-  width: calc((88vh/26)*3);
+  height: 13.84615vh;
+  width: 13.84615vh;
   margin: 1vh;
   padding: 1vh;
   display: -webkit-box;
@@ -136,7 +135,7 @@ body {
   margin: 1vh;
   border-radius: 1vh;
   background-color: white;
-  width: calc((88vh/26)*3);
+  width: 13.84615vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,8 +155,8 @@ body {
   border-radius: 1vh;
   background-color: white;
   padding: 1vh;
-  height: calc((88vh/26)*4);
-  width: calc((88vh/26)*3);
+  height: 18.46154vh;
+  width: 13.84615vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,8 +172,8 @@ body {
 .icons .buttons {
   margin: 1vh;
   padding: 1vh;
-  height: calc((88vh/52)*2);
-  width: calc((88vh/26)*3);
+  height: 4.61538vh;
+  width: 13.84615vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,8 +193,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(($map-scale/20));
-  width: calc((88vh/20));
+  height: 6vh;
+  width: 6vh;
   background-color: red;
   text-align: center;
   color: #ecdd08;

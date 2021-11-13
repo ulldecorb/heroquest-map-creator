@@ -2,7 +2,7 @@
 @import 'icons-size';
 
 
-$map-scale: 88vh;
+// $map-scale: 120vh;
 
 
 body {
@@ -40,14 +40,14 @@ body {
     z-index: 2;
 
     &__cell {
-        height:calc(88vh/26);
-        width:calc(88vh/26);
+        height:$map-scale/26;
+        width:$map-scale/26;
     }
 }
 
 .icons{
     height: 100vh;
-    width: calc((88vh/8.66)+12px);
+    width: $map-scale/6;
     position: fixed;
     left: 0;
     top:0;
@@ -60,8 +60,8 @@ body {
     justify-content: space-between;
     
     &__monsters {
-        height:calc((88vh/26)*3);
-        width:calc((88vh/26)*3);
+        height:$map-scale/26*3;
+        width:$map-scale/26*3;
         margin: 1vh;
         padding: 1vh;
         display:flex;
@@ -76,7 +76,7 @@ body {
         margin: 1vh;
         border-radius: 1vh;
         background-color:rgb(255, 255, 255);
-        width:calc((88vh/26)*3);
+        width:$map-scale/26*3;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -89,8 +89,8 @@ body {
         border-radius: 1vh;
         background-color:rgb(255, 255, 255);
         padding: 1vh;
-        height:calc((88vh/26)*4);
-        width:calc((88vh/26)*3);
+        height:$map-scale/26*4;
+        width:$map-scale/26*3;
         display:flex;
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -101,8 +101,8 @@ body {
         margin: 1vh;
         // margin: 1vh 0;
         padding: 1vh;
-        height: calc((88vh/52)*2);
-        width:calc((88vh/26)*3);
+        height: $map-scale/52*2;
+        width:$map-scale/26*3;
         display: flex;
         justify-content: space-between;
         
@@ -111,9 +111,8 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height:calc(($map-scale/20));
-            width:calc((88vh/20));
-            // margin: 0 1vh;
+            height:$map-scale/20;
+            width:$map-scale/20;            // margin: 0 1vh;
             // padding: 1vh;
             background-color: red;
             text-align: center;
