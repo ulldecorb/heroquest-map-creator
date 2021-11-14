@@ -1,10 +1,6 @@
 @import 'variables';
 @import 'icons-size';
 
-
-// $map-scale: 120vh;
-
-
 body {
     background-image: url(../assets/background/stone-texture.svg);
     background-size: 20%;
@@ -23,14 +19,12 @@ body {
     left: 0;
     height: 100vh;
     width:100vw;
-    // z-index: -1;
     cursor: help;
 }
 
 .map {
     display: inline-grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    // grid-gap: 2px 2px;
     background-image: url(../assets/objets/tablero/Tablero.jpg);
     background-size: 101% 102%;
     background-position: center;
@@ -51,8 +45,6 @@ body {
     position: fixed;
     left: 0;
     top:0;
-    // margin: 2.5vh 0;
-    // padding: 1vh;
     background-color:rgb(0, 0, 0);
     border-right: 0.6vh solid #000;
     display: flex;
@@ -69,7 +61,6 @@ body {
         justify-content: flex-start;
         border-radius: 1vh;
         background-color:rgb(255, 255, 255);
-        // margin-bottom: 10px;
     }
     
     &__furniture {
@@ -94,12 +85,10 @@ body {
         display:flex;
         flex-flow: row wrap;
         justify-content: flex-start;
-        // margin-bottom: 1vh;
     }
     
     .buttons {
         margin: 1vh;
-        // margin: 1vh 0;
         padding: 1vh;
         height: $map-scale/52*2;
         width:$map-scale/26*3;
@@ -112,8 +101,7 @@ body {
             justify-content: center;
             align-items: center;
             height:$map-scale/20;
-            width:$map-scale/20;            // margin: 0 1vh;
-            // padding: 1vh;
+            width:$map-scale/20;
             background-color: red;
             text-align: center;
             color: rgb(236, 221, 8);
@@ -128,30 +116,37 @@ body {
 }
 
 .monsters {
-    border-radius: 50%;
-
+    
     &__skull {
+        border-radius: 50%;
         background-image: url(../assets/objets/monstruos/Esqueleto.png);
     }
     &__ork {
+        border-radius: 50%;
         background-image: url(../assets/objets/monstruos/Orco.png);
     }
     &__goblin {
+        border-radius: 50%;
         background-image: url(../assets/objets/monstruos/Goblin.png);
     }
     &__chaos-warrior {
+        border-radius: 50%;
         background-image: url(../assets/objets/monstruos/Guerrero-del-Caos.png);
     }
     &__zombie {
+        border-radius: 50%;
         background-image: url(../assets/objets/monstruos/Zombi.png);
     }
     &__mummy {
+        border-radius: 50%;
         background-image: url(../assets/objets/monstruos/Momia.png);
     }
     &__fimir {
+        border-radius: 50%;
         background-image: url(../assets/objets/monstruos/Fimir.png);
     }
     &__gargoyle {
+        border-radius: 50%;
         background-image: url(../assets/objets/monstruos/Gargola.png);
     }
 }

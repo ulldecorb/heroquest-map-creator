@@ -22,18 +22,6 @@ function fillMapCells () {
         map.appendChild(cell);
     }
 }
-// (function fillMapCells () {
-//     let map = document.getElementById("map");
-
-//     for(let i = 0; i < 494; i++){
-//         const cell = document.createElement( "DIV" );
-//         cell.id = 'cell' + i;
-//         cell.setAttribute( "class", 'map__cell');
-//         cell.setAttribute( "ondrop", 'drop(event)' );
-//         cell.setAttribute( "ondragover", 'allowDrop(event)' );
-//         map.appendChild(cell);
-//     }
-// })()
 
 function rotateElement (event) {
     const currentElement = document.getElementById(event.target.id);
@@ -193,14 +181,3 @@ function printTest() {
     var c = document.getElementById('map');
     var t = c.getContext('2d');
     window.open('', t.toDataURL());}
-
-// function end(e){
-// 	e.target.style.opacity = ''; // Pone la opacidad del elemento a 1 			
-// 	e.dataTransfer.clearData("Data");
-// }
-// function enter(e) {
-// 	e.target.style.border = '3px dotted #555'; 
-// }
-// function leave(e) {
-// 	e.target.style.border = ''; 
-// }
