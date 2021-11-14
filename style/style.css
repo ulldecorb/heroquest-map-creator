@@ -64,6 +64,12 @@ body {
   overflow: hidden;
 }
 
+h2 {
+  color: red;
+  text-align: center;
+  cursor: pointer;
+}
+
 .trash {
   position: absolute;
   top: 0;
@@ -107,9 +113,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .icons__monsters {
@@ -335,6 +341,6 @@ body {
 }
 
 [tabindex]:hover {
-  outline: 2px solid red;
+  outline: 4px solid red;
 }
 /*# sourceMappingURL=style.css.map */

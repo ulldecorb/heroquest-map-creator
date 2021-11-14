@@ -1,8 +1,26 @@
 let counterId = 0;
 fillMapCells();
-// document.addEventListener('keydown', cloneItemOnMap(event));
-
 document.getElementById('map').onkeydown = function(event) { cloneItemOnMap(event) };
+
+const monstersTitle = document.getElementById('icons__monsters-title');
+const furnitureTitle = document.getElementById('icons__furniture-title');
+const doorsTitle = document.getElementById('icons__doors-title');
+
+monstersTitle.addEventListener('click', () => {
+    const monsters = document.getElementById('monsters');
+    monsters.style.display === 'flex' ? monsters.style.display = 'none' : monsters.style.display = 'flex';
+})
+furnitureTitle.addEventListener('click', () => {
+    const furniture = document.getElementById('furniture');
+    furniture.style.display === 'flex' ? furniture.style.display = 'none' : furniture.style.display = 'flex';
+})
+doorsTitle.addEventListener('click', () => {
+    const doors = document.getElementById('doors');
+    doors.style.display === 'flex' ? doors.style.display = 'none' : doors.style.display = 'flex';
+})
+
+
+// document.addEventListener('keydown', cloneItemOnMap(event));
 
 // function test(e) {
 //     console.log(e.key);
