@@ -19,3 +19,11 @@ Add border for icons when there are dragged on.
 Chance to add text inputs.  
 Print map to pdf file and allow download it.  
 Add grey background to the unused map's cells. 
+	
+## Setup / How to use?
+To run this project, install it locally:
+
+```
+$ cd heroquest-map-creator
+$ <your browser> index.html
+```
