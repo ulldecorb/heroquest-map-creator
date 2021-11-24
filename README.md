@@ -9,7 +9,7 @@
 * [Project status](#Project-status)
 <!-- * [Sources](#Sources) -->
 <!-- * [Other information](#Other-information) -->
-* 
+
 ## General info
 This project is a webpage where create old fantasy rol game HeroQuest maps.
 
