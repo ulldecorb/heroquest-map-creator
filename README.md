@@ -12,6 +12,7 @@
 
 ## General info
 This project is a webpage where create old fantasy rol game HeroQuest maps.
+[open in browser](https://ulldecorb.github.io/heroquest-map-creator/)
 
 ## Technologies
 * HTML 5
