@@ -68,6 +68,7 @@ h2 {
   color: red;
   text-align: center;
   cursor: pointer;
+  margin: 0;
 }
 
 .trash {
@@ -91,6 +92,7 @@ h2 {
   background-clip: content-box;
   outline: 3vh solid #000;
   z-index: 2;
+  overflow: hidden;
 }
 
 .map__cell {
@@ -98,7 +100,7 @@ h2 {
   width: 4.61538vh;
 }
 
-.icons {
+.icons__left {
   height: 100vh;
   width: 20vh;
   position: fixed;
@@ -116,9 +118,12 @@ h2 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.icons__monsters {
+.icons__left__monsters {
   height: 13.84615vh;
   width: 13.84615vh;
   margin: 1vh;
@@ -137,26 +142,7 @@ h2 {
   background-color: white;
 }
 
-.icons__furniture {
-  margin: 1vh;
-  border-radius: 1vh;
-  background-color: white;
-  width: 13.84615vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 1vh;
-  margin: 5px 1vh;
-}
-
-.icons__doors-traps {
+.icons__left__doors-traps {
   margin: 1vh;
   border-radius: 1vh;
   background-color: white;
@@ -175,7 +161,7 @@ h2 {
           justify-content: flex-start;
 }
 
-.icons .buttons {
+.icons__left .buttons {
   margin: 1vh;
   padding: 1vh;
   height: 4.61538vh;
@@ -188,7 +174,7 @@ h2 {
           justify-content: space-between;
 }
 
-.icons .buttons .button {
+.icons__left .buttons .button {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,9 +194,51 @@ h2 {
   font-size: 0.5em;
 }
 
-.icons .buttons .button:hover {
+.icons__left .buttons .button:hover {
   background-color: orange;
   color: red;
+}
+
+.icons__right {
+  height: 100vh;
+  width: 20vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: black;
+  border-right: 0.6vh solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons__right__furniture {
+  margin: 1vh;
+  border-radius: 1vh;
+  background-color: white;
+  width: 13.84615vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1vh;
+  margin: 5px 1vh;
 }
 
 .monsters__skull {

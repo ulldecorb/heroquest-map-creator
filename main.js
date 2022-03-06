@@ -1,23 +1,23 @@
 let counterId = 0;
 fillMapCells();
-document.getElementById('map').onkeydown = function(event) { cloneItemOnMap(event) };
+// document.getElementById('map').onkeydown = function(event) { cloneItemOnMap(event) };
 
-const monstersTitle = document.getElementById('icons__monsters-title');
-const furnitureTitle = document.getElementById('icons__furniture-title');
-const doorsTitle = document.getElementById('icons__doors-title');
+// const monstersTitle = document.getElementById('icons__monsters-title');
+// const furnitureTitle = document.getElementById('icons__furniture-title');
+// const doorsTitle = document.getElementById('icons__doors-title');
 
-monstersTitle.addEventListener('click', () => {
-    const monsters = document.getElementById('monsters');
-    monsters.style.display === 'flex' ? monsters.style.display = 'none' : monsters.style.display = 'flex';
-})
-furnitureTitle.addEventListener('click', () => {
-    const furniture = document.getElementById('furniture');
-    furniture.style.display === 'flex' ? furniture.style.display = 'none' : furniture.style.display = 'flex';
-})
-doorsTitle.addEventListener('click', () => {
-    const doors = document.getElementById('doors');
-    doors.style.display === 'flex' ? doors.style.display = 'none' : doors.style.display = 'flex';
-})
+// monstersTitle.addEventListener('click', () => {
+//     const monsters = document.getElementById('monsters');
+//     monsters.style.display === 'flex' ? monsters.style.display = 'none' : monsters.style.display = 'flex';
+// })
+// furnitureTitle.addEventListener('click', () => {
+//     const furniture = document.getElementById('furniture');
+//     furniture.style.display === 'flex' ? furniture.style.display = 'none' : furniture.style.display = 'flex';
+// })
+// doorsTitle.addEventListener('click', () => {
+//     const doors = document.getElementById('doors');
+//     doors.style.display === 'flex' ? doors.style.display = 'none' : doors.style.display = 'flex';
+// })
 
 
 // document.addEventListener('keydown', cloneItemOnMap(event));
@@ -158,44 +158,44 @@ function cloneIcon(idToClone) {
         return cloneIcon;
 }
 
-function cloneItemOnMap(event){
-    // ev.preventDefault();
-    // const data = ev.dataTransfer.getData("text");
-    // e.key === 'Control' && ev.target.appendChild(document.getElementById(data).cloneNode(true))
-    // function firstOk(event) {
-    //     return event.key === 'Control';
-    // }
-    // function secondOk(event) {
-    //     return event.key === 'Control';
-    // }
-    if (event.key === 'Control') { alert('guai 2') };
-}
+// function cloneItemOnMap(event){
+//     // ev.preventDefault();
+//     // const data = ev.dataTransfer.getData("text");
+//     // e.key === 'Control' && ev.target.appendChild(document.getElementById(data).cloneNode(true))
+//     // function firstOk(event) {
+//     //     return event.key === 'Control';
+//     // }
+//     // function secondOk(event) {
+//     //     return event.key === 'Control';
+//     // }
+//     if (event.key === 'Control') { alert('guai 2') };
+// }
 
-function savePDF(divId, title) {
-    doc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
-    doc.save('div.pdf');
-}
+// function savePDF(divId, title) {
+//     doc.fromHTML(`<html><head><title>${title}</title></head><body>` + document.getElementById(divId).innerHTML + `</body></html>`);
+//     doc.save('div.pdf');
+// }
 
-function printDiv(divId,
-    title) {
+// function printDiv(divId,
+//     title) {
   
-    let mywindow = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150');
+//     let mywindow = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150');
   
-    mywindow.document.write(`<html><head><title>${title}</title>`);
-    mywindow.document.write('</head><body >');
-    mywindow.document.write(document.getElementById(divId).innerHTML);
-    mywindow.document.write('</body></html>');
+//     mywindow.document.write(`<html><head><title>${title}</title>`);
+//     mywindow.document.write('</head><body >');
+//     mywindow.document.write(document.getElementById(divId).innerHTML);
+//     mywindow.document.write('</body></html>');
   
-    mywindow.document.close(); // necessary for IE >= 10
-    mywindow.focus(); // necessary for IE >= 10*/
+//     mywindow.document.close(); // necessary for IE >= 10
+//     mywindow.focus(); // necessary for IE >= 10*/
   
-    mywindow.print();
-    mywindow.close();
+//     mywindow.print();
+//     mywindow.close();
   
-    return true;
-}
+//     return true;
+// }
 
-function printTest() {
-    var c = document.getElementById('map');
-    var t = c.getContext('2d');
-    window.open('', t.toDataURL());}
+// function printTest() {
+//     var c = document.getElementById('map');
+//     var t = c.getContext('2d');
+//     window.open('', t.toDataURL());}
